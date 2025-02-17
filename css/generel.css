@@ -168,7 +168,7 @@ footer p {
   flex-direction: column;
 }
 
-@media (max-width: 643px) {
+@media (max-width: 628px) {
   .mail_container {
     order: 2; /* Mail kommer sidst */
   }
