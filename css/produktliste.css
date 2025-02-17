@@ -87,6 +87,11 @@
   margin: 10px 0;
   align-items: center;
   justify-content: center;
+  text-transform: uppercase;
+}
+
+h1 {
+  text-transform: uppercase;
 }
 
 .card p {
