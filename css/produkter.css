@@ -1,0 +1,215 @@
+.product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  gap: 80px;
+}
+
+.product-image {
+  width: 400px;
+  height: auto;
+  background-color: #fff6ea;
+  padding: 20px;
+  box-shadow: 5px 5px 0px rgba(130, 93, 71, 0.5);
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+}
+
+.product-info {
+  font-family: "Departure Mono", monospace;
+}
+
+.brand {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.product-name {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.price {
+  font-size: 22px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.cart-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-box {
+  display: flex;
+  align-items: center;
+  border: 0.5px solid #000;
+  width: 80px;
+  justify-content: space-between;
+  padding: 6px;
+  background-color: #fff;
+}
+
+.plus-minus {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.quantity {
+  width: 25px;
+  text-align: center;
+  border: none;
+  font-size: 16px;
+  background: none;
+}
+
+.add-to-cart {
+  background-color: #e0a195;
+  padding: 12px 45px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 0.5px solid black;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  background-color: #d38b7f;
+}
+
+.favorites img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.about-product {
+  margin-top: 20px;
+}
+
+.about-product a {
+  margin-right: 15px;
+  font-size: 14px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.about-product a:hover {
+  color: #d38b7f;
+}
+
+.about-dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.about-dropdown .about-content {
+  display: none;
+  position: absolute;
+  background-color: #fff6ea;
+  padding: 35px;
+  min-width: 400px;
+  box-shadow: 5px 5px 10px rgba(160, 116, 91, 0.5);
+}
+
+.about-dropdown:hover .about-content {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.about-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 10px;
+  white-space: pre-line;
+  font-family: "Departure Mono", monospace;
+}
+
+@media (max-width: 768px) {
+  .product-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    gap: 40px;
+  }
+
+  .product-image {
+    width: 300px;
+    padding: 15px;
+    box-shadow: 3px 3px 0px rgba(130, 93, 71, 0.5);
+  }
+
+  .product-info {
+    text-align: center;
+  }
+
+  .brand {
+    font-size: 14px;
+  }
+
+  .product-name {
+    font-size: 24px;
+  }
+
+  .price {
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .cart-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .quantity-box {
+    width: 100px;
+  }
+
+  .add-to-cart {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .favorites img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .about-product {
+    text-align: center;
+  }
+
+  .about-product a {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .about-dropdown .about-content {
+    padding: 20px;
+    min-width: 100%;
+    width: 250px;
+    text-align: left;
+    z-index: 1;
+  }
+
+  .about-content p {
+    font-size: 12px;
+    line-height: 1.4;
+    padding: 5px;
+  }
+}
