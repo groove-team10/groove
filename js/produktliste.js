@@ -20,9 +20,9 @@ function displayProducts(products) {
   container.innerHTML = ""; // Ryd tidligere indhold
 
   products.forEach((product) => {
-    const discountLabel = product.discountPercentage ? `<div class="discount-label">Udsalg: ${product.discountPercentage}%</div>` : "";
+    const soldoutLabel = product.discountPercentage ? `<div class="soldout-label">Discount: ${product.discountPercentage}%</div>` : "";
 
-    const soldoutLabel = product.stock === 0 ? `<div class="soldout-label">Udsolgt</div>` : "";
+    const discountLabel = product.stock === 0 ? `<div class="soldout-label">Udsolgt</div>` : "";
 
     const productHTML = `
         <section class="card">
@@ -42,3 +42,14 @@ function displayProducts(products) {
     container.innerHTML += productHTML;
   });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const imageElement = document.getElementById("categoryImage");
+
+  // Tjek hvilken kategori vi er i baseret på URL eller body class
+  if (window.location.href.includes("fragrances")) {
+    imageElement.src = "img/perfume.webp";
+  } else if (window.location.href.includes("beauty")) {
+    imageElement.src = "img/stift.webp";
+  }
+});
