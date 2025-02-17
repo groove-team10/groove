@@ -27,12 +27,14 @@
 
 .product_grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Responsive Grid */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive Grid */
   grid-template-rows: auto auto auto;
-  gap: 25px;
+  gap: 50px !important;
   align-items: start;
   place-items: center;
   padding-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /* Card Container */
@@ -41,25 +43,31 @@
   grid-template-rows: auto 1fr auto;
   position: relative;
   padding: 15px;
-
-  max-width: 400px;
+  background: url("../img/produktkort.webp") no-repeat center/cover;
+  border: 0.5px solid #4f0b24;
+  width: 320px;
+  height: 500px;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .card:hover {
   transform: translateY(-5px); /* Slight lift */
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  box-shadow: 10px 5px 0px rgba(160, 116, 91, 0.5);
 }
 
 /* Image Styling */
 .card img {
   width: 100%;
+  height: 290px; /* Ens højde på alle billeder */
+  object-fit: contain; /* Sørger for at billeder bliver beskåret ens */
+  display: block;
 }
 
 /* Subgrid for Text */
 .card_container {
   display: flex;
-  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
   padding: 10px;
 }
@@ -74,4 +82,16 @@
   font-size: 14px;
   font-weight: 300;
   margin: 0;
+}
+
+@media (min-width: 690px) and (max-width: 1389px) {
+  .card {
+    width: 330px;
+  }
+}
+
+@media (max-width: 689px) {
+  .card {
+    width: 370px;
+  }
 }
