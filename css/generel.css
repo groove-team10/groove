@@ -34,7 +34,6 @@ nav a {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0 20px;
   list-style: none;
@@ -44,12 +43,17 @@ nav a {
   max-width: 100%;
 }
 
+.logo-container {
+  margin-right: auto;
+}
+
 nav {
   border-bottom: 0.5px solid #4f0b24;
 }
 
 .navbar .dropdown a {
   padding: 0;
+  padding-right: 70px;
 }
 
 .navbar img {
@@ -179,6 +183,11 @@ footer p {
 
   nav a {
     font-size: 15px;
+  }
+
+  .navbar .dropdown a {
+    padding: 0;
+    padding-right: 30px;
   }
 }
 
