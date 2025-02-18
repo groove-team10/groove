@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" />
+    <link rel="icon" href="img/GROOVE.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/generel.css" />
+    <link rel="stylesheet" href="css/produktliste.css" />
     <title>GROOVE - Produktliste</title>
   </head>
   <body>
@@ -20,15 +23,94 @@
           <div class="dropdown">
             <a href="#">CATEGORIES</a>
             <div class="content">
-              <a href="#">BEAUTY</a>
-              <a href="#">FRAGRANCES</a>
+              <a href="produktliste.html?category=beauty">BEAUTY</a>
+              <a href="produktliste.html?category=fragrances">FRAGRANCES</a>
             </div>
           </div>
           <div><a href="#">ABOUT</a></div>
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <div class="stift_item">
+        <img id="categoryImage" src="img/stift.webp" alt="stift" />
+      </div>
+      <div class="header_container">
+        <h1 class="category-title"></h1>
+        <img src="img/starline.webp" alt="stjernelinje" />
+      </div>
+
+      <section class="product_grid">
+        <!-- <section class="card">
+          <a href="produkt.html">
+            <img src="https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/1.png" alt="Produktbillede" />
+            <article class="card_container">
+              <h2 class="item_titel">ESSENCE MASCARA LASH PRINCESS</h2>
+              <div class="arrow">
+                <p class="price">9.99 $</p>
+                <img src="img/right-arrow.webp" alt="arrow" style="width: 30px; height: 40px" />
+              </div>
+            </article>
+          </a>
+        </section>
+
+        <section class="card">
+          <a href="produkt.html">
+            <img src="https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png" alt="Produktbillede" />
+            <article class="card_container">
+              <h2 class="item_titel">EYESHADOW PALETTE WITH MIRROR</h2>
+              <div class="arrow">
+                <p class="price">19.99 $</p>
+                <img src="img/right-arrow.webp" alt="arrow" style="width: 30px; height: 40px" />
+              </div>
+            </article>
+          </a>
+        </section>
+
+        <section class="card">
+          <a href="produkt.html">
+            <img src="https://cdn.dummyjson.com/products/images/beauty/Powder%20Canister/1.png" alt="Produktbillede" />
+            <article class="card_container">
+              <h2 class="item_titel">POWDER CANISTER</h2>
+              <div class="arrow">
+                <p class="price">14.99 $</p>
+                <img src="img/right-arrow.webp" alt="arrow" style="width: 30px; height: 40px" />
+              </div>
+            </article>
+          </a>
+        </section>
+
+        <section class="card">
+          <a href="produkt.html">
+            <div class="soldout-label">SOLD OUT</div>
+            <img src="https://cdn.dummyjson.com/products/images/beauty/Red%20Lipstick/1.png" alt="Produktbillede" />
+            <article class="card_container">
+              <h2 class="item_titel">RED LIPSTICK</h2>
+              <div class="arrow">
+                <p class="price">12.99 $</p>
+                <img src="img/right-arrow.webp" alt="arrow" style="width: 30px; height: 40px" />
+              </div>
+            </article>
+          </a>
+        </section> -->
+      </section>
+
+      <div class="formular_container">
+        <form id="contactForm">
+          <h3>CONTACT US</h3>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </main>
     <footer>
       <div class="footer_container">
         <div class="service_container">
@@ -49,5 +131,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/produktliste.js"></script>
   </body>
 </html>
