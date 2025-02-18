@@ -26,7 +26,7 @@ function displayProducts(products) {
 
     const productHTML = `
         <section class="card">
-          <a href="produkt.html?id=${product.id}">
+          <a href="produkter.html?id=${product.id}">
             ${soldoutLabel}
             <img src="${product.thumbnail}" alt="${product.title}" />
             <article class="card_container">
