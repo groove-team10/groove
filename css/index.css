@@ -145,7 +145,7 @@ footer {
 
     .hero h1 {
         font-size: 120px; /* Større tekst */
-        margin-top: 0; /* Centreret i sektionen */
+        margin-top: auto; /* Centreret i sektionen */
         text-shadow: 3px 3px 0px #6b1e1e;
     }
 
@@ -159,7 +159,7 @@ footer {
 
     /* --- KATEGORISEKTION --- */
     .categories {
-        margin-top: 120px; /* Mere luft */
+        margin-top: 120px; 
     }
 
     .categories h2 {
@@ -168,15 +168,15 @@ footer {
 
     .category-boxes {
         display: flex;
-        flex-direction: row; /* Gør dem til en række */
+        flex-direction: row; 
         justify-content: center;
         gap: 40px;
         margin-top: 100px;
     }
 
     .category-box {
-        width: 250px;
-        height: 100px;
+        width: 300px;
+        height: 300px;
         font-size: 20px;
     }
 
@@ -201,4 +201,5 @@ footer {
     .random-svg:nth-child(2) { top: 60%; left: 50%; }
     .random-svg:nth-child(3) { top: 70%; left: 30%; }
     .random-svg:nth-child(4) { top: 40%; left: 80%; }
+    
 }
