@@ -130,6 +130,55 @@ h2.item_titel {
   vertical-align: middle;
 }
 
+form#contactForm {
+  display: flex;
+  flex-direction: column;
+  font-family: "Departure Mono", monospace;
+  background-color: #fff6ea;
+  max-width: 400px;
+  padding: 40px;
+  border: 1px solid #4f0b24;
+  box-shadow: 10px 5px 0px rgba(160, 116, 91, 0.5);
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+button {
+  font-family: "Departure Mono", monospace;
+  background-color: #fff6ea;
+  cursor: pointer;
+  outline: none; /* Fjerner default outline */
+  border: 1px solid #4f0b24;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: #ffffff;
+}
+
+h3 {
+  color: #ae3028;
+  font-family: "Shrikhand", cursive;
+}
+
+input,
+textarea {
+  border: 1px solid #4f0b24; /* Mørkerød farve, der matcher dit design */
+  border-radius: 0px;
+  outline: none; /* Fjerner default outline */
+  padding: 8px;
+  font-family: "Departure Mono", monospace;
+  font-size: 14px;
+}
+
+label {
+  padding-top: 20px;
+}
+
+textarea#message {
+  margin-bottom: 20px;
+}
 @media (min-width: 690px) and (max-width: 1389px) {
   .card {
     width: 330px;
