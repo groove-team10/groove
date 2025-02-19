@@ -1,3 +1,5 @@
+/* Hente kategori fra URL */
+
 const urlParams = new URLSearchParams(window.location.search);
 const category = urlParams.get("category");
 
@@ -5,6 +7,13 @@ if (category) {
   document.querySelector(".category-title").textContent = category;
   fetchProducts(category);
 }
+
+// Koden tjekker, om der er en kategori i URL’en (fx produktliste.html?category=beauty).
+// Kalder funktionen fetchProducts(category), som henter produkter fra API’et.
+
+/* ------------------------------------------------------------------------------------- */
+
+/* Hente kategori fra URL */
 
 async function fetchProducts(category) {
   const url = `https://dummyjson.com/products`;
@@ -15,9 +24,18 @@ async function fetchProducts(category) {
   displayProducts(products);
 }
 
+// Funktion fetchProducts(category) henter en liste af produkter fra https://dummyjson.com/products.
+// Konverterer dataene til JSON-format (response.json()).
+// Filtrerer produkterne, så kun dem med den valgte kategori vises.
+// Sender de filtrerede produkter videre til displayProducts().
+
+/* ------------------------------------------------------------------------------------- */
+
+/* Viser produkterne på hjemmesiden */
+
 function displayProducts(products) {
   const container = document.querySelector(".product_grid");
-  container.innerHTML = ""; // Ryd tidligere indhold
+  container.innerHTML = "";
 
   products.forEach((product) => {
     const soldoutLabel = product.discountPercentage ? `<div class="soldout-label">Discount: ${product.discountPercentage}%</div>` : "";
@@ -43,10 +61,17 @@ function displayProducts(products) {
   });
 }
 
+// Finder HTML-elementet .product_grid, hvor produkterne skal vises.
+// Fjerner gamle produkter (container.innerHTML = "";).
+// Løber gennem listen af produkter (forEach())
+
+/* ------------------------------------------------------------------------------------- */
+
+/* Ændrer billede dynamisk baseret på kategori */
+
 document.addEventListener("DOMContentLoaded", function () {
   const imageElement = document.getElementById("categoryImage");
 
-  // Tjek hvilken kategori vi er i baseret på URL eller body class
   if (window.location.href.includes("fragrances")) {
     imageElement.src = "img/perfume.webp";
   } else if (window.location.href.includes("beauty")) {
@@ -54,8 +79,20 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+// Når siden indlæses (DOMContentLoaded), finder den et billede (#categoryImage).
+// Hvis brugeren er i fragrances, skifter billedet til en parfume.
+// Hvis brugeren er i beauty, skifter billedet til en læbestift.
+
+/* ------------------------------------------------------------------------------------- */
+
+/* Formular alert besked */
+
 document.getElementById("contactForm").addEventListener("submit", function (event) {
   event.preventDefault();
   alert("Thank you for your message! We will get back to you as soon as possible.");
   this.reset(); // Ryd formularen efter indsendelse
 });
+
+// Når brugeren sender kontaktformularen, forhindrer koden siden i at genindlæse (event.preventDefault()).
+// Viser en besked (alert("Thank you for your message!")).
+// Nulstiller formularen (this.reset()), så den bliver tom igen.

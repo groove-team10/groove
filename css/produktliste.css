@@ -34,7 +34,7 @@
 
 .product_grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive Grid */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
   gap: 50px !important;
   align-items: start;
@@ -46,7 +46,7 @@
 
 .card {
   display: grid;
-  grid-template-rows: subgrid; /* Sikrer ens højde */
+  grid-template-rows: subgrid;
   grid-row: span 3;
   position: relative;
   padding: 15px;
@@ -58,7 +58,7 @@
 }
 
 .card:hover {
-  transform: translateY(-5px); /* Slight lift */
+  transform: translateY(-5px);
   box-shadow: 10px 5px 0px rgba(160, 116, 91, 0.5);
 }
 
@@ -121,7 +121,7 @@ h2 {
   padding-top: 23px;
   align-items: center;
   padding-right: 26px;
-  grid-row: 3 !important; /* Sikrer at den placeres i samme række på tværs af kortene */
+  grid-row: 3 !important;
 }
 
 h2.item_titel {
@@ -129,6 +129,8 @@ h2.item_titel {
   align-items: center;
   vertical-align: middle;
 }
+
+/* Formular styling */
 
 form#contactForm {
   display: flex;
@@ -148,7 +150,7 @@ button {
   font-family: "Departure Mono", monospace;
   background-color: #fff6ea;
   cursor: pointer;
-  outline: none; /* Fjerner default outline */
+  outline: none;
   border: 1px solid #4f0b24;
   padding: 10px;
 }
@@ -164,9 +166,9 @@ h3 {
 
 input,
 textarea {
-  border: 1px solid #4f0b24; /* Mørkerød farve, der matcher dit design */
+  border: 1px solid #4f0b24;
   border-radius: 0px;
-  outline: none; /* Fjerner default outline */
+  outline: none;
   padding: 8px;
   font-family: "Departure Mono", monospace;
   font-size: 14px;
@@ -179,6 +181,9 @@ label {
 textarea#message {
   margin-bottom: 20px;
 }
+
+/* Responsiv styling */
+
 @media (min-width: 690px) and (max-width: 1389px) {
   .card {
     width: 330px;
