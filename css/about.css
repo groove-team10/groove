@@ -170,26 +170,4 @@ textarea#message {
   footer {
     margin-top: 30px;
   }
-
-  .lipstick {
-    padding-left: 22%;
-    size: 1%;
-  }
-  @media (max-width: 480px) {
-    form#contactForm {
-      max-width: 100%;
-      padding: 15px;
-    }
-
-    button {
-      padding: 8px;
-      font-size: 85%;
-    }
-
-    input,
-    textarea {
-      padding: 10px;
-      font-size: 85%;
-    }
-  }
 }
