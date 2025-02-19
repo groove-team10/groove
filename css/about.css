@@ -67,47 +67,47 @@ footer {
 
 @media (max-width: 768px) {
   .header_container h1 {
-    font-size: 3rem; /* Reducer font-størrelse for mindre skærme */
+    font-size: 3rem;
     margin-bottom: -30px;
   }
 
   .header_container h2 {
-    font-size: 2.5rem; /* Reducer font-størrelse for mindre skærme */
+    font-size: 2.5rem;
     margin-bottom: -30px;
   }
 
   .header_container img {
     width: 80%;
-    max-width: 500px; /* Gør billedet mindre på mobil */
+    max-width: 500px;
   }
 
   .p_container {
-    font-size: 50%; /* Reducer font-størrelse for mindre skærme */
+    font-size: 50%;
     padding-top: 5%;
-    max-width: 90%; /* Gør containeren bredere på mobil */
+    max-width: 90%;
   }
 
   img {
     width: 80%;
-    max-width: 500px; /* Gør billedet mindre på mobil */
+    max-width: 500px;
   }
 
   footer {
-    margin-top: 50px; /* Reducer marginen i footer på mobil */
+    margin-top: 50px;
   }
 }
 
 @media (max-width: 480px) {
   .header_container h1 {
-    font-size: 2.5rem; /* Yderligere reduktion på meget små skærme */
+    font-size: 2.5rem;
   }
 
   .header_container h2 {
-    font-size: 2rem; /* Yderligere reduktion på meget små skærme */
+    font-size: 2rem;
   }
 
   .p_container {
-    font-size: 45%; /* Yderligere reduktion på meget små skærme */
+    font-size: 45%;
     padding-top: 7%;
     padding-right: 5%;
     padding-left: 5%;
@@ -115,11 +115,11 @@ footer {
   }
 
   footer {
-    margin-top: 30px; /* Yderligere reducer margin i footer */
+    margin-top: 30px;
   }
 
   .lipstick {
-    padding-right: 30%;
-    size: 60px;
+    padding-left: 22%;
+    size: 1%;
   }
 }
