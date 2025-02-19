@@ -8,9 +8,10 @@
 }
 
 .header_container h1 {
-  font-family: "Shrikhand", cursive;
+  font-family: "Shrikhand";
   font-size: 3rem;
   color: #ae3028;
+  -webkit-text-stroke: 0.7px white;
   margin-bottom: -40px;
   white-space: nowrap;
 }
