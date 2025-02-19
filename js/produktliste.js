@@ -84,15 +84,3 @@ document.addEventListener("DOMContentLoaded", function () {
 // Hvis brugeren er i beauty, skifter billedet til en læbestift.
 
 /* ------------------------------------------------------------------------------------- */
-
-/* Formular alert besked */
-
-document.getElementById("contactForm").addEventListener("submit", function (event) {
-  event.preventDefault();
-  alert("Thank you for your message! We will get back to you as soon as possible.");
-  this.reset(); // Ryd formularen efter indsendelse
-});
-
-// Når brugeren sender kontaktformularen, forhindrer koden siden i at genindlæse (event.preventDefault()).
-// Viser en besked (alert("Thank you for your message!")).
-// Nulstiller formularen (this.reset()), så den bliver tom igen.
