@@ -1,3 +1,24 @@
+.back {
+  display: inline-block;
+  position: absolute;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  margin-top: 40px;
+  padding: 10px 20px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: "Departure Mono", monospace;
+  font-size: 12px;
+  transition: all 0.3s ease;
+  box-shadow: black;
+}
+
+.back:hover {
+  background-color: #e0a195;
+  color: white;
+  box-shadow: 5px 5px 0px rgba(160, 116, 91, 0.5);
+}
+
 .product-container {
   display: flex;
   justify-content: center;
@@ -11,7 +32,7 @@
   height: auto;
   background-color: #fff6ea;
   padding: 20px;
-  box-shadow: 5px 5px 0px rgba(130, 93, 71, 0.5);
+  box-shadow: 10px 5px 0px rgba(160, 116, 91, 0.5);
 }
 
 .product-image img {
@@ -51,7 +72,7 @@
 .quantity-box {
   display: flex;
   align-items: center;
-  border: 0.5px solid #000;
+  border: 0.5px solid #4f0b24;
   width: 80px;
   justify-content: space-between;
   padding: 6px;
@@ -80,7 +101,7 @@
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
-  border: 0.5px solid black;
+  border: 0.5px solid #4f0b24;
   cursor: pointer;
 }
 
