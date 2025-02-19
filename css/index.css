@@ -11,11 +11,12 @@
 
 .hero h1 {
     font-size: 100px;
-    color: #8d3c32;
+    color: #ae3028;
     text-shadow: 2px 2px 0px #6b1e1e;
     font-family: "Shrikhand";
     text-transform: uppercase;
     margin-top: 50%;
+    -webkit-text-stroke: 0.7px white;
 }
 
 
@@ -49,12 +50,12 @@
 }
 
 .categories h2 {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
-    color: #8d3c32;
-    font-style: italic;
-    text-transform: uppercase;
-    
+    color: #ae3028;
+    -webkit-text-stroke: 0.7px white;
+    text-transform: uppercase;   
+  
 }
 
 .category-boxes {
@@ -106,9 +107,10 @@ html {
 }
 
 .svg-container {
-    position: relative;
+    position: relative; 
     width: 100%;
-    height: 100vh; /* Gør siden høj, så SVG'er kan placeres over det hele */
+    height: 100vh; /* Sikrer, at containeren fylder hele viewporten */
+    
 }
 
 .random-svg {
@@ -117,11 +119,11 @@ html {
     height: 80px;
 }
 
-/* Håndplacer nogle SVG'er */
-.random-svg:nth-child(1) { top: 80%; left: 20%; }
-.random-svg:nth-child(2) { top: 1500%; left: 50%; }
-.random-svg:nth-child(3) { top: 1300%; left: 10%; }
-.random-svg:nth-child(4) {top: 100%; left: 70%;}
+/* Justerede positioner for at sikre, at de bliver i containeren */
+.random-svg:nth-child(1) { top: 20vh; left: 20%; }
+.random-svg:nth-child(2) { top: 50vh; left: 80%; transform: translateX(-50%); }
+.random-svg:nth-child(3) { top: 50vh; left: 10%; }
+.random-svg:nth-child(4) { top: 25vh; left: 70%; }
 
 
 @media (max-width: 643px) {
@@ -165,7 +167,7 @@ html {
     }
 
     .categories h2 {
-        font-size: 32px;
+        font-size: 50px;
     }
 
     .category-boxes {
@@ -182,13 +184,13 @@ html {
         font-size: 20px;
     }
 
-    /* --- FOOTER --- */
+  
     footer {
         margin-top: 100px;
         padding: 30px 0;
     }
 
-    /* --- SVG-container --- */
+    
     .svg-container {
         height: 120vh; /* Giver mere plads */
     }
@@ -198,10 +200,10 @@ html {
         height: 100px;
     }
 
-    /* Justér placering af SVG'er */
+  
     .random-svg:nth-child(1) { top: 50%; left: 10%; }
     .random-svg:nth-child(2) { top: 60%; left: 50%; }
-    .random-svg:nth-child(3) { top: 70%; left: 30%; }
-    .random-svg:nth-child(4) { top: 40%; left: 80%; }
+    .random-svg:nth-child(3) { top: 50%; left: 30%; }
+    .random-svg:nth-child(4) { top: 60%; left: 80%; }
     
 }
