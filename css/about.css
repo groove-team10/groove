@@ -65,6 +65,59 @@ footer {
   margin-top: 100px;
 }
 
+.lipstick {
+  margin-bottom: 55px;
+}
+
+form#contactForm {
+  display: flex;
+  flex-direction: column;
+  font-family: "Departure Mono", monospace;
+  background-color: #fff6ea;
+  max-width: 300px;
+  padding: 30px;
+  border: 1px solid #4f0b24;
+  box-shadow: 5px 3px 0px rgba(160, 116, 91, 0.5);
+  margin: 0 auto 20px auto;
+}
+
+button {
+  font-family: "Departure Mono", monospace;
+  background-color: #fff6ea;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #4f0b24;
+  padding: 8px;
+}
+
+button:hover {
+  background-color: #ffffff;
+}
+
+h3 {
+  color: #ae3028;
+  font-family: "Shrikhand", cursive;
+  font-size: 95%;
+}
+
+input,
+textarea {
+  border: 1px solid #4f0b24;
+  outline: none;
+  padding: 16px;
+  font-family: "Departure Mono", monospace;
+}
+
+label {
+  padding-top: 15px;
+  padding-bottom: 20px;
+  font-size: 70%;
+}
+
+textarea#message {
+  margin-bottom: 30px; /* Mindre afstand */
+}
+
 @media (max-width: 768px) {
   .header_container h1 {
     font-size: 3rem;
