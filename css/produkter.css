@@ -10,7 +10,7 @@
   font-family: "Departure Mono", monospace;
   font-size: 12px;
   transition: all 0.3s ease;
-  box-shadow: black;
+  box-shadow: 10px 5px 0px rgba(160, 116, 91, 0.5);
 }
 
 .back:hover {
