@@ -60,9 +60,9 @@ img {
   padding-top: 3%;
 }
 
-footer {
+/* footer {
   margin-top: 100px;
-}
+} */
 
 .lipstick {
   margin-bottom: 55px;
@@ -143,10 +143,6 @@ textarea#message {
     width: 80%;
     max-width: 500px;
   }
-
-  footer {
-    margin-top: 50px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -164,9 +160,5 @@ textarea#message {
     padding-right: 5%;
     padding-left: 5%;
     line-height: 2.3;
-  }
-
-  footer {
-    margin-top: 30px;
   }
 }
