@@ -34,7 +34,7 @@
     width: 80%;
     max-width: 300px;
     font-family: "Departure Mono", monospace;
-    box-shadow:black
+    box-shadow: 10px 5px 0px rgba(160, 116, 91, 0.5);
 }
 
 .collection-btn:hover {
@@ -82,7 +82,7 @@
     color: #d38b7f;
     text-transform: uppercase;
     transition: all 0.3s ease;
-    box-shadow: black
+    box-shadow: 10px 5px 0px rgba(160, 116, 91, 0.5);
     
 }
 
